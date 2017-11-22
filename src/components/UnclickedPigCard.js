@@ -6,9 +6,8 @@ class UnclickedPigCard extends React.Component {
 	}
 
 	render() {
-		debugger;
 		return (
-			<div className="card">
+			<div className="card" onClick={this.props.handleClick}>
 				<div className="image">
 					<img
 						src="https://media.istockphoto.com/photos/pig-picture-id105614536"
@@ -17,7 +16,6 @@ class UnclickedPigCard extends React.Component {
 				</div>
 				<div className="content">
 					<div className="header">{this.props.pig.name}</div>
-					<div className="description">{this.props.highest_medal_achieved}</div>
 				</div>
 			</div>
 		);

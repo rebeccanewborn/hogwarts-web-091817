@@ -21,9 +21,9 @@ class PigCardContainer extends React.Component {
 
 	render() {
 		return this.state.isClicked ? (
-			<ClickedPigCard pig={this.props.pig} onClick={this.handleClick} />
+			<ClickedPigCard pig={this.props.pig} handleClick={this.handleClick} />
 		) : (
-			<UnclickedPigCard pig={this.props.pig} onClick={this.handleClick} />
+			<UnclickedPigCard pig={this.props.pig} handleClick={this.handleClick} />
 		);
 	}
 }
