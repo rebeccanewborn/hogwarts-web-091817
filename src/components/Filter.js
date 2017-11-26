@@ -10,6 +10,11 @@ class Filter extends React.Component {
 					onChange={this.props.handleCheckMethod}
 					value={this.props.greasedOnly}
 				/>
+				<label>Sort By</label>
+				<select onChange={this.props.handleSortMethod}>
+					<option value="name">Name</option>
+					<option value="weight">Weight</option>
+				</select>
 			</div>
 		);
 	}
